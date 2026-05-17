@@ -26,7 +26,7 @@ This is based on an original project that I did 5 months ago, but had some issue
 git clone https://github.com/Bomfri/Myblog.git
 2. Install dependencies
 pip install django python-decouple
-3. Create a `.env` file with your `SECRET_KEY`
+3. Create a .env file with my SECRET_KEY
 4. Run the development server
 python manage.py runserver
 
