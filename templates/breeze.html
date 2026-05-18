@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Breeze</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="description" content="Cool new minecraft mobs: Creaking and Breeze">
+    <meta name="keywords" content="Minecraft, minecraft, minecraft mob, breeze, the breeze, Breeze, minecraft live, website, blog, information">
+    <meta name="author" content="Bardia Bayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <span class="brand">⛏️ Minecraft Mobs</span>
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'creaking' %}">The Creaking</a>
+        <a href="{% url 'breeze' %}">The Breeze</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="text"><i>The Breeze</i></h1>
+
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/0Cbw1b2mkGk?si=zu9wlzs3ukvsJcQD" title="Minecraft Breeze Showcase video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; margin-bottom: 20px;"></iframe>
+
+        <p class="text">
+            <span style="color: white;"><b><big>The Breeze</big></b></span> is a new Minecraft mob that was added to the game in the <b>Tricky Trials</b> (1.21) update. This mob spawns in the new trial chambers. It uses wind charges to damage the player and enable traps inside the trial chambers.
+        </p>
+
+        <table align="center" width="400">
+            <tr align="center">
+                <th width="100">Difficulty</th>
+                <td width="100"><b>Easy</b></td>
+                <td width="100"><b>Normal</b></td>
+                <td width="100"><b>Hard</b></td>
+            </tr>
+            <tr align="center">
+                <th>Damage</th>
+                <td><img src="{% static 'images/Half_Heart_(icon).webp' %}" alt="half a heart" height="12"></td>
+                <td><img src="{% static 'images/Half_Heart_(icon).webp' %}" alt="half a heart" height="12"></td>
+                <td><img src="{% static 'images/Heart_(icon).webp' %}" alt="heart" height="12"> * 0.75</td>
+            </tr>
+        </table>
+
+        <details class="text">
+            <summary><big><b>Common Questions:</b></big></summary>
+            <ul class="text">
+                <li class="outerli"><b>How to find the Breeze</b></li>
+                <ol>
+                    <li>To find the Breeze, you first have to locate a trial chamber (trade with the cartographer villager for the map)</li>
+                    <li>Explore through the trial chambers to find a Breeze spawner</li>
+                </ol>
+                <li class="outerli"><b>How to kill the Breeze</b></li>
+                <ol>
+                    <li>The Breeze is not a dangerous mob by itself, try to kill the other mobs in the chamber first</li>
+                    <li>Then you can use a melee weapon to kill the breeze (make sure to have a water bucket to clutch from the fall damage)</li>
+                </ol>
+            </ul>
+        </details>
+
+        <hr>
+
+        <a href="https://minecraft.wiki/w/Breeze" target="_blank" class="text"><b>Minecraft Wiki Page</b></a>
+    </div>
+</body>
+</html>

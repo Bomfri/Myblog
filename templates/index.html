@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Mobs</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="description" content="Cool new minecraft mobs: Creaking and Breeze">
+    <meta name="keywords" content="Minecraft, minecraft, minecraft mob, breeze, the breeze, Breeze, creaking, the creaking, Creaking, minecraft live, website, blog, information">
+    <meta name="author" content="Bardia Bayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <span class="brand">⛏️ Minecraft Mobs</span>
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'creaking' %}">The Creaking</a>
+        <a href="{% url 'breeze' %}">The Breeze</a>
+    </nav>
+
+    <div class="container">
+        <h1>Cool New Minecraft Mobs</h1>
+
+        <section>
+            <h2 class="text">The Creaking</h2>
+            <div class="image-row">
+                <img src="{% static 'images/minecraft-the-creaking-.webp' %}" alt="Picture of Creaking" title="Creaking">
+                <img src="{% static 'images/minecraft-the-creaking.webp' %}" alt="creaking">
+                <img src="{% static 'images/palegarden creaking.jpg' %}" alt="pale garden creaking">
+            </div>
+            <p class="text">The Creaking is a new cool upcoming Minecraft mob that is hostile. It naturally spawns in the new biome <a href="{% url 'creaking' %}" class="text">more...</a></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="text">The Breeze</h2>
+            <div class="image-row">
+                <img src="{% static 'images/minecraft-breeze.jpg' %}" alt="Picture of a Breeze" title="Breeze">
+                <img src="{% static 'images/the breeze.jpeg' %}" alt="the breeze">
+                <img src="{% static 'images/the-breeze-v0-4v58djgucnub1.webp' %}" alt="a breeze">
+            </div>
+            <p class="text">The Breeze is a new Minecraft mob that was added to the game in the Tricky Trials (1.21) update. This mob spawns in the new trial chambers <a href="{% url 'breeze' %}" class="text">more...</a></p>
+        </section>
+    </div>
+</body>
+</html>

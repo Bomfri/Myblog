@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Creaking</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="description" content="Cool new minecraft mobs: Creaking and Breeze">
+    <meta name="keywords" content="Minecraft, minecraft, minecraft mob, creaking, the creaking, Creaking, minecraft live, website, blog, information">
+    <meta name="author" content="Bardia Bayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <span class="brand">⛏️ Minecraft Mobs</span>
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'creaking' %}">The Creaking</a>
+        <a href="{% url 'breeze' %}">The Breeze</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="text"><i>The Creaking</i></h1>
+
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/eHEQY3ua_uY?si=u8M5wcbCS541MeWP" title="Creaking showcase video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px; margin-bottom: 20px;"></iframe>
+
+        <p class="text">
+            <span style="color: white;"><b><big>The Creaking</big></b></span> is a new Minecraft mob that is hostile. It naturally spawns in the new biome: the <b>Pale Garden</b>. This mob is invincible to any damage and will hunt the player when it is not being watched. The Creaking can be summoned by placing that block in the right place and time.
+        </p>
+
+        <table align="center" width="400">
+            <tr align="center">
+                <th width="100">Difficulty</th>
+                <td width="100"><b>Easy</b></td>
+                <td width="100"><b>Normal</b></td>
+                <td width="100"><b>Hard</b></td>
+            </tr>
+            <tr align="center">
+                <th>Damage</th>
+                <td><img src="{% static 'images/Heart_(icon).webp' %}" alt="heart" height="12"></td>
+                <td><img src="{% static 'images/Heart_(icon).webp' %}" alt="heart" height="12"></td>
+                <td>
+                    <img src="{% static 'images/Heart_(icon).webp' %}" alt="heart" height="12">
+                    <img src="{% static 'images/Half_Heart_(icon).webp' %}" alt="half heart" height="12">
+                </td>
+            </tr>
+        </table>
+
+        <details class="text">
+            <summary><big><b>Common Questions:</b></big></summary>
+            <ul class="text">
+                <li class="outerli"><b>How to kill the Creaking</b></li>
+                <ol>
+                    <li>Look at the creaking</li>
+                    <li>Try to hit the creaking</li>
+                    <li>Follow the orange and gray particles to a tree</li>
+                    <li>Chop the tree down and look for the Creaking Heart</li>
+                    <li>Mine the heart (pro tip: you can box yourself to the tree with blocks to protect yourself from the monster)</li>
+                </ol>
+                <li class="outerli"><b>How to summon the Creaking</b></li>
+                <ol>
+                    <li>Use a silk touch axe to mine the creaking heart</li>
+                    <li>Chop down at least two pale oak logs</li>
+                    <li>Place one log with the heart on top of it</li>
+                    <li>Add another log to the top</li>
+                    <li>The creaking will spawn at night</li>
+                </ol>
+            </ul>
+        </details>
+
+        <hr>
+
+        <a href="https://minecraft.wiki/w/Creaking" target="_blank" class="text"><b>Minecraft Wiki Page</b></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* ===== BASE ===== */
+body {
+    background-image: url(images/junglepic\ for\ background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "Rubik", "Open Sans", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #27d65e;
+}
+
+nav a {
+    color: #27d65e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav .brand {
+    font-size: 18px;
+    color: white;
+    margin-right: auto;
+}
+
+/* ===== CONTENT CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    border-left: 4px solid #27d65e;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+/* ===== IMAGES ===== */
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.image-row img {
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ===== TEXT ===== */
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.text {
+    color: white;
+}
+
+a.text {
+    color: #27d65e;
+}
+
+a.text:hover {
+    color: white;
+}
+
+/* ===== TABLE ===== */
+table {
+    background-color: black;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+td {
+    background-color: white;
+    font-weight: 500;
+    font-size: small;
+    padding: 8px 16px;
+}
+
+th {
+    background-color: #27d65e;
+    color: black;
+    font-weight: 800;
+    font-size: small;
+    padding: 8px 16px;
+}
+
+/* ===== LISTS ===== */
+li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.outerli {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    font-size: medium;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: #27d65e;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27d65e;
+    color: black;
+}
+
+/* ===== DETAILS/SUMMARY ===== */
+details {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 20px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+hr {
+    border-color: rgba(255,255,255,0.2);
+    margin: 30px 0;
+}
+
+div.image-row img {
+    height: 200px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+}
